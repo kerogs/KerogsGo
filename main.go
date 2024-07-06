@@ -1,4 +1,4 @@
-package colors
+package main
 
 var (
 	Reset        = "\033[0m"
