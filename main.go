@@ -20,6 +20,3 @@ var (
 	LightWhite   = "\033[97m"
 	Orange       = "\033[38;5;208m"
 )
-
-func main() {
-}	

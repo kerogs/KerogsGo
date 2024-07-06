@@ -3,7 +3,7 @@
 ## Use
 1.
 ```sh
-go get github.com/kerogs/go-colors
+go get "github.com/kerogs/go-colors"
 ```
 2.
 ```Go
