@@ -7,7 +7,7 @@ import (
 	"os/exec"
 )
 
-func AsciiStart(version string) {
+func AsciiStart() {
 	fmt.Println(colors.Red)
 	fmt.Println("                       $o")
 	fmt.Println("                       $                     .........")
@@ -22,8 +22,8 @@ func AsciiStart(version string) {
 	fmt.Println(" !!$$$!!!!!!!!oooo......   '''  $$ $$ :o           'oo.")
 	fmt.Println(" !!$$$!!!$$!$$!!!!!!!!!!oo.....     ' ''  o$$o .      ''oo..")
 	fmt.Println(" !!!$$!!!!!!!!!!!!!!!!!!!!!!!!!!!!ooooo..      'o  oo..    $")
-	fmt.Println("  '!!$$!!!!!!oneFileTransfer!!!!!!!!!!!!!!!oooooo..  ''   ,$")
-	fmt.Println("   '!!$!!!!!!!!v" + version + " kerogs!!!!!!!!!!!!!!!!!!!!!!!!oooo..$$")
+	fmt.Println("  '!!$$!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!oooooo..  ''   ,$")
+	fmt.Println("   '!!$!!!!!!!!!!!!!!!Kerogs!!!!!!!!!!!!!!!!!!!!!!!!oooo..$$")
 	fmt.Println("    !!$!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!$'")
 	fmt.Println("    '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$!!!!!!!!!!!!!!!!!!,")
 	fmt.Println(".....$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.....")
