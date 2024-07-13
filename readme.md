@@ -1,14 +1,21 @@
 # Go terminal colors
 
 ## Use
-1.
+1. import
 ```sh
-go get "github.com/kerogs/go-colors"
+go get "github.com/kerogs/KerogsGo"
 ```
-2.
+2. use
 ```Go
-import "github.com/kerogs/go-colors"
+import "github.com/kerogs/KerogsGo/[pkg]"
 ```
+
+## Func 
+|Name|Import|Desc|
+|-|-|-|
+|colors.[Colors]|``/colors``|Add colors to CLI|
+|cli.AsciiStart|``/cli``|Add kerogs watermark|
+|cli.ClearScreen|``/cli``|Clear cmd|
 
 ## Colors
 |Call|Name|Code|
