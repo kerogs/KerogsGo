@@ -1,3 +1,3 @@
-module github.com/kerogs/go-colors
+module github.com/kerogs/KerogsGo
 
 go 1.22.2
