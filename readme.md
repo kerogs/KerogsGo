@@ -16,6 +16,8 @@ import "github.com/kerogs/KerogsGo/[pkg]"
 |colors.[Colors]|``/colors``|Add colors to CLI|
 |cli.AsciiStart|``/cli``|Add kerogs watermark|
 |cli.ClearScreen|``/cli``|Clear cmd|
+|cli.CliReturn|``/cli``|return x line above|
+|cli.FileMake|``/cli``|make a file + write in|
 
 ## Colors
 |Call|Name|Code|

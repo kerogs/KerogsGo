@@ -35,3 +35,25 @@ func ClearScreen() {
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
+
+func CliReturn(repeat int) {
+	for i := 0; i < repeat; i++ {
+		fmt.Printf("\033[1A\033[K")
+	}
+}
+
+func FileMake(name string, content string) {
+	file, err := os.Create(name)
+	if err != nil {
+		fmt.Println("file creation error :", err)
+		return
+	}
+	defer file.Close()
+
+	_, err = file.WriteString(content)
+	if err != nil {
+		fmt.Println("Erreur lors de l'écriture dans le fichier :", err)
+		return
+	}
+
+}
