@@ -13,7 +13,7 @@ import "github.com/kerogs/KerogsGo/[Import]"
 
 ## Func 
 |Name|Import|In|Out|Desc|
-|-|-|-|
+|-|-|-|-|-|
 |colors.[Colors]|``/colors``|N/A|N/A|Add colors to CLI|
 |base.AsciiStart|``/base``|N/A|N/A|Add kerogs watermark|
 |terminal.ClearScreen|``/terminal``|N/A|N/A|Clear cmd|
