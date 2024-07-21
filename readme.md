@@ -1,4 +1,5 @@
 # Go terminal colors
+KerogsGo is just another function I use often. It's simply intended to simplify my life.
 
 ## Use
 1. import
@@ -7,17 +8,20 @@ go get "github.com/kerogs/KerogsGo"
 ```
 2. use
 ```Go
-import "github.com/kerogs/KerogsGo/[pkg]"
+import "github.com/kerogs/KerogsGo/[Import]"
 ```
 
 ## Func 
-|Name|Import|Desc|
+|Name|Import|In|Out|Desc|
 |-|-|-|
-|colors.[Colors]|``/colors``|Add colors to CLI|
-|cli.AsciiStart|``/cli``|Add kerogs watermark|
-|cli.ClearScreen|``/cli``|Clear cmd|
-|cli.CliReturn|``/cli``|return x line above|
-|cli.FileMake|``/cli``|make a file + write in|
+|colors.[Colors]|``/colors``|N/A|N/A|Add colors to CLI|
+|base.AsciiStart|``/base``|N/A|N/A|Add kerogs watermark|
+|terminal.ClearScreen|``/terminal``|N/A|N/A|Clear cmd|
+|terminal.CliReturn|``/terminal``|``repeat`` int|N/A|return x line above|
+|terminal.StopProgram|``/terminal``|N/A|N/A|Stop the program, but first wait for an interaction.|
+|terminal.StopProgramMsg|``/terminal``|``message`` string|N/A|Same as above, just add a custom message directly with|
+|terminal.StopProgramErr|``/terminal``|``errorReturn`` error, ``message`` string|N/A|Same as above, just you can add a custom message directly to it and also give the error.|
+|filedir.FileMake|``/filedir``|``name`` string, ``content`` string|N/A|make a file + write in|
 
 ## Colors
 |Call|Name|Code|

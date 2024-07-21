@@ -1,12 +1,14 @@
-package cli
+package base
 
 import (
 	"fmt"
 	"github.com/kerogs/KerogsGo/colors"
-	"os"
-	"os/exec"
 )
 
+// AsciiStart prints a Kerogs watermark in ASCII art.
+//
+// No parameters.
+// No return value.
 func AsciiStart() {
 	fmt.Println(colors.Red)
 	fmt.Println("                       $o")
@@ -30,30 +32,3 @@ func AsciiStart() {
 	fmt.Println(colors.Reset)
 }
 
-func ClearScreen() {
-	cmd := exec.Command("cmd", "/c", "cls")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-}
-
-func CliReturn(repeat int) {
-	for i := 0; i < repeat; i++ {
-		fmt.Printf("\033[1A\033[K")
-	}
-}
-
-func FileMake(name string, content string) {
-	file, err := os.Create(name)
-	if err != nil {
-		fmt.Println("file creation error :", err)
-		return
-	}
-	defer file.Close()
-
-	_, err = file.WriteString(content)
-	if err != nil {
-		fmt.Println("Erreur lors de l'écriture dans le fichier :", err)
-		return
-	}
-
-}
